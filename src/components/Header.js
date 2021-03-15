@@ -10,6 +10,7 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     padding:"70px",
+    boxShadow: "1px 1px 1px 1px #888888"
   },
   headingTitle: {
     fontSize: "30px",
