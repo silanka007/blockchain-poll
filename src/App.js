@@ -1,14 +1,23 @@
-import { Grid } from "@material-ui/core";
+import { Grid, withStyles } from "@material-ui/core";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
+import Poll from "./components/Poll";
 
-function App() {
+const styles = {
+  app: {
+    width: "100vw",
+    height:"100vh",
+  }
+}
+
+function App({classes}) {
   return (
-    <Grid className="App">
+    <Grid className={classes.app}>
       <Nav />
       <Header />
+      <Poll />
     </Grid>
   );
 }
 
-export default App;
+export default withStyles(styles)(App);
